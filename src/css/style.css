@@ -1,0 +1,76 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+}
+
+html{
+    font-family: "Roboto", sans-serif;
+}
+
+
+.container{
+    display: grid;
+    max-width: 900px;
+    /* max-height: 415px; */
+    grid-template-areas: "video-destaque propaganda" "video-destaque video-sugerido" ;
+    grid-template-columns: 1fr 270px;
+    grid-template-rows: 56px 1fr;/* 1 fr, que é uma fração, significa que vai ocupar 1 fração do tamanho restante do espaço do pai.*/
+
+    gap: 20px;
+    padding: 35px;
+    background-color: #F7F7F7;
+}
+
+.video-destaque{
+    grid-area: video-destaque;
+}
+.video-destaque img{
+    margin-bottom: 12px;
+    width: 100%;
+}
+.video-destaque .titulo{
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.video-destaque .visualizacoes{
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.propaganda{
+    grid-area: propaganda;
+    margin-bottom: 10px;
+}
+.video-sugerido{
+    grid-area: video-sugerido;
+}
+
+.video-sugerido .video{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.video-sugerido .video .informacoes .titulo{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.video-sugerido .video p{
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+/* .video-destaque .informacoes {
+    margin-bottom: 10px;
+} */
+/* .video-destaque .visualizacoes {
+    margin-bottom: 10px;
+}
+.video-destaque p {
+    margin-bottom: 10px;
+} */
+
+
+
+
